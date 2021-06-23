@@ -1,0 +1,113 @@
+@font-face {
+    font-family: Merriweather;
+    src: url(fonts/Merriweather-Regular.ttf);
+}
+
+@font-face {
+    font-family: Merriweather;
+    src: url(fonts/Merriweather-Bold.ttf);
+    font-weight: bold;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Merriweather', 'Oxygen', 'Segoe UI', sans-serif;
+}
+
+body {
+    margin: 0px;
+    margin-top: 35px;
+    margin-bottom: 35px;
+    padding: 0px;
+    background-image: url('background.gif');
+}
+
+.body {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 50px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0rem 0rem 0.5rem rgba(0, 0, 0, 0.12);  
+}
+
+.heading {
+    display: grid;
+    overflow: hidden;
+    place-items: center;
+    grid-template-columns: 0.5fr 2fr 2fr 0.5fr;
+    
+}
+
+.image {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    margin: 10px;
+    box-shadow: 0rem 0rem 0.5rem rgba(0, 0, 0, 0.5);
+    
+}
+
+#main-title {
+    font-size: 40px;
+    padding: 0px;
+    margin: 0px;
+}
+
+#sub-title {
+    padding: 0px;
+    margin: 0px;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+td {
+    vertical-align: top;
+    padding-bottom: 10px;
+}
+
+.td-padding {
+    padding-right: 10px;
+}
+
+ul {
+    margin-top: 0px;
+}
+
+li {
+    padding-bottom: 10px;
+}
+
+.table-head {
+    width: 225px;
+}
+
+a:link       { text-decoration: none; color: black }            /*   unvisited link    */
+a:visited    { text-decoration: none; color: black }            /*    visited link     */
+a:hover      { color: #407ef6; text-decoration: underline; }    /*   mouse over link   */
+a:active     { color: #ffa500; text-decoration: underline; }    /*    selected link    */
+
+
+@media (max-width: 800px) {
+    body {
+        margin: 0px;
+        padding: 0px;
+    }
+    
+    .body {
+        padding: 50px;
+        background-color: white;
+    }
+    
+    .body {
+        width: 100%;
+    }
+    
+    #main-title,
+    #sub-title {
+        padding-left: 20px;
+    }
+}
